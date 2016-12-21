@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>waddap genres</h1>
+
+    <p>
+      <% @genres.each do |genre| %>
+        <%= genre.name %>
+        <a href="/genres/<%="#{genre.slug}"%>">Link</a>
+      <% end %>
+    </p>
+
+  </body>
+</html>

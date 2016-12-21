@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>waddap songs</h1>
+
+    <p>
+      <% @songs.each do |song| %>
+        <%= song.name %>
+        <a href="/songs/<%="#{song.slug}"%>">Link</a>
+      <% end %>
+    </p>
+
+  </body>
+</html>
